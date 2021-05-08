@@ -1,0 +1,20 @@
+.auth {
+  display: flex;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.auth__item {
+  margin-right: 30px;
+}
+
+.auth__link {
+  color: rgb(11, 11, 184);
+  text-decoration: none;
+}
+
+.auth__link_active {
+  color: rgb(11, 11, 184);
+  text-decoration: none;
+  color: white;
+}
