@@ -5,8 +5,8 @@ import Container from '../components/Container';
 import Form from '../components/Form';
 import ContactList from '../components/ContactList';
 import Filter from '../components/Filter';
-import { fetchContact } from '../redux/contactOperations';
-import { getLoading, getError } from '../redux/contactSelectors';
+import { fetchContact } from '../redux/contacts/contactOperations';
+import { getLoading, getError } from '../redux/contacts/contactSelectors';
 
 class ContactsView extends Component {
   componentDidMount() {

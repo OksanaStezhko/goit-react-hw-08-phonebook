@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.email {
+  font-weight: bold;
+  margin-right: 12px;
+}

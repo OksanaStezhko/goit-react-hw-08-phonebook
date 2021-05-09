@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'; // Импорт функции коннекта к хранилищу
-import { addContact } from '../../redux/contactOperations';
-import { getContacts } from '../../redux/contactSelectors';
+import { addContact } from '../../redux/contacts/contactOperations';
+import { getContacts } from '../../redux/contacts/contactSelectors';
 
 import Form from './Form';
 

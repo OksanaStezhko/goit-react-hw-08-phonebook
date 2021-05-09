@@ -2,7 +2,7 @@ const routers = {
   home: '/',
   contacts: '/contacts',
   login: '/login',
-  registration: '/registration',
+  register: '/register',
 };
 
 export default routers;

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'; // Импорт функции коннекта к хранилищу
-import { deleteContact } from '../../redux/contactOperations';
-import { getVisibleContacts } from '../../redux/contactSelectors';
+import { deleteContact } from '../../redux/contacts/contactOperations';
+import { getVisibleContacts } from '../../redux/contacts/contactSelectors';
 import ContactList from './ContactList';
 
 const mapStateToProps = state => ({

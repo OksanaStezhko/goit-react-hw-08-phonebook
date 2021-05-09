@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'; // Импорт функции коннекта к хранилищу
-import { changeFilter } from '../../redux/contactActions';
-import { getFilter } from '../../redux/contactSelectors';
+import { changeFilter } from '../../redux/contacts/contactActions';
+import { getFilter } from '../../redux/contacts/contactSelectors';
 
 import Filter from './Filter';
 

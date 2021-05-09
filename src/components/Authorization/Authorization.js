@@ -6,7 +6,7 @@ const Authorization = () => (
   <ul className={style.auth}>
     <li className={style.auth__item}>
       <NavLink
-        to="/registration"
+        to="/register"
         exact
         className={style.auth__link}
         activeClassName={style.auth__link_active}
