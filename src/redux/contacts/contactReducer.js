@@ -21,6 +21,7 @@ const itemsReducer = createReducer([], {
 });
 
 const errorReducer = createReducer(null, {
+  [fetchContactSuccess]: () => null,
   [fetchContactError]: () => 'Error of fetch! Try later!',
   [addContactError]: () => 'Error of add contact!  Try later!',
   [deleteContactError]: () => 'Error of delete contact!  Try later!',

@@ -1,0 +1,31 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image {
+  width: 50vh;
+  margin-right: 50px;
+}
+
+.title {
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(11, 11, 184);
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(50, 50, 122);
+}
+
+.textend {
+  display: block;
+}

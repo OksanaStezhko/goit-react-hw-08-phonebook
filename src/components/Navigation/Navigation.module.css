@@ -1,8 +1,9 @@
 .nav {
   display: flex;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
+  align-items: center;
 }
 
 .nav__item {
@@ -17,5 +18,9 @@
 .nav__link_active {
   color: rgb(11, 11, 184);
   text-decoration: none;
+  color: white;
+}
+
+.nav__item:hover {
   color: white;
 }

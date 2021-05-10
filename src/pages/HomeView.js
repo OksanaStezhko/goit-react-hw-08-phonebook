@@ -1,11 +1,23 @@
 import React, { Component } from 'react';
 import Container from '../components/Container';
+import fonebook from '../images/fonebook.png';
+import style from './HomeView.module.css';
+
 class HomeView extends Component {
   render() {
     return (
       <main>
         <Container>
-          <h1>Начальная страница</h1>
+          <h1 className={style.title}>Fonebook for you!</h1>
+          <div className={style.box}>
+            <img src={fonebook} alt="fonebook" className={style.image} />
+            <p className={style.text}>
+              Lightweight application for managing contacts. Your contacts will
+              be stored on a remote server and will always be available to you
+              on any device connected to the Internet.
+              <span className={style.textend}>Try it now!</span>
+            </p>
+          </div>
         </Container>
       </main>
     );
