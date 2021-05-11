@@ -24,6 +24,7 @@
   background-color: rgba(106, 153, 207, 0.3);
   font-size: 12px;
   font-weight: bold;
+  border-radius: 4px;
 }
 
 .button:hover,

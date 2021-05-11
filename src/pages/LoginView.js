@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import authOperations from '../redux/authorization/authOperetion';
 
 import Container from '../components/Container';
-import style from './LoginView.module.css';
+import style from './Pages.module.css';
 
 class LoginView extends Component {
   state = {
@@ -28,34 +28,38 @@ class LoginView extends Component {
     return (
       <main>
         <Container>
-          <h2>Sign in to Fonebook</h2>
-          <p>All fields are required</p>
+          <h2 className={style.title}>Sign in to Fonebook</h2>
+
           <form
             onSubmit={this.handleSubmit}
-            style={style.form}
+            className={style.form}
             autoComplete="off"
           >
-            <label style={style.label}>
-              email:
+            <label className={style.label}>
+              Email:
               <input
                 type="email"
                 name="email"
                 value={email}
                 onChange={this.handleChange}
+                className={style.input}
               />
             </label>
 
-            <label style={style.label}>
-              password:
+            <label className={style.label}>
+              Password:
               <input
                 type="password"
                 name="password"
                 value={password}
                 onChange={this.handleChange}
+                className={style.input}
               />
             </label>
 
-            <button type="submit">Log in</button>
+            <button type="submit" className={style.button}>
+              Log in
+            </button>
           </form>
         </Container>
       </main>

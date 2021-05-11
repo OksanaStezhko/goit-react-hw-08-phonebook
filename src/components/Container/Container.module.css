@@ -26,8 +26,8 @@
 
 header .container {
   display: flex;
-  -webkit-box-shadow: 0px 0px 30px 0px rgba(83, 143, 212, 0.2) inset;
-  -moz-box-shadow: 0px 0px 30px 0px rgba(83, 143, 212, 0.2) inset;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba((34, 59, 87, 0.2)) inset;
+  -moz-box-shadow: 0px 0px 30px 0px rgba((34, 59, 87, 0.2)) inset;
   box-shadow: 0px 0px 30px 0px rgba(34, 59, 87, 0.2) inset;
 }
 main .container {

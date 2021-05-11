@@ -6,10 +6,11 @@ import style from './ContactList.module.css';
 const ContactList = ({ contactList, onDeleteContact }) => {
   return (
     <ul className={style.list}>
-      {contactList.map(({ id, ...dataContact }) => (
+      {contactList.map(({ id, ...dataContact }, index) => (
         <ContactListItem
           key={id}
           id={id}
+          num={index + 1}
           listItem={Object.values(dataContact)}
           onDeleteContact={onDeleteContact}
         />

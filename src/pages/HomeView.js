@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Container from '../components/Container';
 import fonebook from '../images/fonebook.png';
-import style from './HomeView.module.css';
+import style from './Pages.module.css';
 
 class HomeView extends Component {
   render() {

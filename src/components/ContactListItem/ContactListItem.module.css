@@ -17,11 +17,13 @@
 }
 
 .button {
-  width: 110px;
+  width: 50px;
+
   border: 1px solid rgb(106, 153, 207);
-  background-color: rgba(106, 153, 207, 0.3);
+  background-color: transparent;
   font-size: 12px;
   font-weight: bold;
+  border-radius: 4px;
 }
 
 .button:hover,
@@ -29,4 +31,17 @@
   background-color: rgba(148, 255, 212, 0.8);
   border: 1px solid rgb(106, 153, 207);
   outline: 1px solid rgb(106, 153, 207);
+}
+
+.num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 30px;
+  height: 30px;
+  background-color: rgba(106, 153, 207, 0.3);
+  border: 1px solid rgb(106, 153, 207);
+  outline: 1px solid rgb(106, 153, 207);
+
+  margin-right: 20px;
 }

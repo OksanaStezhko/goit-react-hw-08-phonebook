@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import authOperations from '../redux/authorization/authOperetion';
 import Container from '../components/Container';
-// import style from './RegisterView.module.css';
+import style from './Pages.module.css';
 
 class RegisterView extends Component {
   state = {
@@ -26,39 +26,48 @@ class RegisterView extends Component {
     return (
       <main>
         <Container>
-          <h2>Registration</h2>
-          <form onSubmit={this.handleSubmit} autoComplete="off">
-            <label>
-              Имя
+          <h2 className={style.title}>Registration</h2>
+          <form
+            onSubmit={this.handleSubmit}
+            autoComplete="off"
+            className={style.form}
+          >
+            <label className={style.label}>
+              Name:
               <input
                 type="text"
                 name="name"
                 value={name}
                 onChange={this.handleChange}
+                className={style.input}
               />
             </label>
 
-            <label>
-              Почта
+            <label className={style.label}>
+              Email:
               <input
                 type="email"
                 name="email"
                 value={email}
                 onChange={this.handleChange}
+                className={style.input}
               />
             </label>
 
-            <label>
-              Пароль
+            <label className={style.label}>
+              Password:
               <input
                 type="password"
                 name="password"
                 value={password}
                 onChange={this.handleChange}
+                className={style.input}
               />
             </label>
 
-            <button type="submit">Зарегистрироваться</button>
+            <button type="submit" className={style.button}>
+              Register
+            </button>
           </form>
         </Container>
       </main>

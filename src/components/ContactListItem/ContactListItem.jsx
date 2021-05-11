@@ -1,11 +1,13 @@
 import React from 'react';
 import shortid from 'shortid';
 import PropTypes from 'prop-types';
+import DeleteIcon from '@material-ui/icons/Delete';
 import style from './ContactListItem.module.css';
 
-const ContactListItem = ({ id, listItem, onDeleteContact }) => {
+const ContactListItem = ({ id, num, listItem, onDeleteContact }) => {
   return (
     <li className={style.item}>
+      <span className={style.num}>{num}.</span>
       {listItem.map(value => (
         <span className={style.info} key={shortid.generate()}>
           {value}
@@ -16,7 +18,7 @@ const ContactListItem = ({ id, listItem, onDeleteContact }) => {
         className={style.button}
         onClick={() => onDeleteContact(id)}
       >
-        Delete
+        <DeleteIcon />
       </button>
     </li>
   );

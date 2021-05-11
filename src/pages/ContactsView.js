@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Loader from 'react-loader-spinner';
+import Loader from '../components/Loader';
 import Container from '../components/Container';
 import Form from '../components/Form';
 import ContactList from '../components/ContactList';
 import Filter from '../components/Filter';
 import { fetchContact } from '../redux/contacts/contactOperations';
 import { getLoading, getError } from '../redux/contacts/contactSelectors';
+import style from './Pages.module.css';
 
 class ContactsView extends Component {
   componentDidMount() {
@@ -18,14 +19,14 @@ class ContactsView extends Component {
     return (
       <main>
         <Container>
-          <h1>Phonebook</h1>
+          <h1 className={style.title}>Phonebook</h1>
           <Form />
           <Filter />
-          <h2>Contacts</h2>
+          <h2 className={style.title_second}>Contacts</h2>
           {isError && <h2>{isError}</h2>}
-          {isLoading && (
-            <Loader type="ThreeDots" color="#6a99cf" height={80} width={80} />
-          )}
+
+          {isLoading ? <Loader /> : <div className={style.plug}></div>}
+
           <ContactList />
         </Container>
       </main>
