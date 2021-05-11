@@ -12,9 +12,9 @@ class HomeView extends Component {
           <div className={style.box}>
             <img src={fonebook} alt="fonebook" className={style.image} />
             <p className={style.text}>
-              Lightweight application for managing contacts. Your contacts will
-              be stored on a remote server and will always be available to you
-              on any device connected to the Internet.
+              Wellcome to our application for managing fone contacts. Your
+              contacts will be stored on a remote server and will always be
+              available to you on any device connected to the Internet.
               <span className={style.textend}>Try it now!</span>
             </p>
           </div>

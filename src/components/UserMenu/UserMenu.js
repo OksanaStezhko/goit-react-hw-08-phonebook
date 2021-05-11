@@ -12,7 +12,7 @@ const UserMenu = ({ signOut, name }) => (
     <span className={style.email}>{name}</span>
 
     <button type="button" className={style.button} onClick={signOut}>
-      <Link exact to="/login">
+      <Link to="/login">
         <ExitToAppIcon className={style.icon} />
       </Link>
     </button>
